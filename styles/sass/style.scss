@@ -1,0 +1,68 @@
+@import "./setup";
+@import "./colors";
+@import "./fonts";
+
+html {
+  font-size: 62.5%;
+  text-align: center;
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+// Upper body styling
+.peachBody {
+  background-color: $peach;
+  height: 80vh;
+  position: relative;
+  .peachBodyContent {
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    left: 0;
+    z-index: 10;
+  }
+}
+
+// Arrow styling
+.arrows {
+  z-index: -10;
+  position: absolute;
+}
+.fa-angle-up {
+top: -150px;
+right: 0;
+left: 0;
+}
+.fa-angle-right {
+  right: 110px;
+  top: 471px;
+}
+
+.fa-angle-left {
+  left: 110px;
+  top: 471px;
+}
+
+.fa-angle-down{
+    bottom: -150px;
+    right: 0;
+    left: 0;
+}
+
+// Lower body styling
+.whiteBody {
+  background-color: $white;
+  position: relative;
+  height: 80vh;
+  .whiteBodyContent {
+    position: absolute;
+    top: -57px;
+    left: 0;
+    right: 0;
+    z-index: 30;
+  }
+}
